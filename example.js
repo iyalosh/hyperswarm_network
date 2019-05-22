@@ -2,7 +2,7 @@ const network = require('./')
 const crypto = require('crypto')
 
 const net = network()
-
+// To look for the other peers on the network
 const k = crypto.createHash('sha256')
   .update(process.argv[2])
   .digest()
